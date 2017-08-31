@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}{{title}} {% endblock title%}</title>
+    {%block head-meta %}
+    {% endblock %} 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bluth Company">
+    <link rel="shortcut icon" href="assets/ico/favicon.html">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/theme.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/alertify.css" rel="stylesheet">
+    {% block head-links %}
+    {% endblock  %}
+  </head>
+  <body>
+    <div id="wrap">
+        {% block body-content %}
+        {% endblock %}
+    </div><!-- wrap ends-->
+
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="assets/js/raphael-min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src='assets/js/sparkline.js'></script>
+    <script type="text/javascript" src='assets/js/morris.min.js'></script>
+    <script type="text/javascript" src="assets/js/jquery.dataTables.min.js"></script>   
+    <script type="text/javascript" src="assets/js/jquery.masonry.min.js"></script>   
+    <script type="text/javascript" src="assets/js/jquery.imagesloaded.min.js"></script>   
+    <script type="text/javascript" src="assets/js/jquery.facybox.js"></script>   
+    <script type="text/javascript" src="assets/js/jquery.alertify.min.js"></script> 
+    <script type="text/javascript" src="assets/js/jquery.knob.js"></script>
+    <script type='text/javascript' src='assets/js/fullcalendar.min.js'></script>
+    <script type='text/javascript' src='assets/js/jquery.gritter.min.js'></script>
+    <script type="text/javascript" src="assets/js/realm.js"></script>
+    {% block body-foot-js %}
+    {% endblock %}
+  </body>
+</html>
+

@@ -1,0 +1,9 @@
+{
+  "db":
+  {
+    "host": "192.168.3.180",
+    "user": "jbb_test",
+    "password": "testjbb123456",
+    "database": "jbb_fq"
+  }
+}

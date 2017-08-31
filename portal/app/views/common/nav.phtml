@@ -1,0 +1,34 @@
+<div class="navfixed">
+  <div class="container">
+    {% block body-nav-main %}
+    <div class="sectionArea">
+      <div class="hidden-elements floatLeft">
+        <a href="/" class="fqLogo"></a>
+      </div>
+      <div class="floatRight">
+        <div class="searchArea">
+          <div class="searchDefault">
+            <form method="GET" action="/goods/list" class="head-search">
+              <a href="/" class="hidden-elements minLogo"><img src="/assets/common/images/minlogo.png"></a>
+              <input type="text" placeholder="iPhone SE 3288 现货发售" class="" name="keyword">
+              <input type="submit" value="搜 索" class="searchBtn">
+            </form>
+          </div>
+          <div class="hidden-elements searchWord">
+            <a href="#" class="app-search" search="6s">iPhone6s</a>
+            <a href="#" class="app-search colorDullred" search="p9">华为P9 PLUS 4G手机</a>
+            <a href="#" class="app-search" search="oppo r9">OPPO R9 全网通</a>
+          {#
+            <a href="#" class="app-search" search="">SE仅售3288</a>
+            <a href="#" class="app-search colorDullred" search="">iWatch</a>
+            <a href="#" class="app-search" search="小米">小米免息</a>
+            <a href="#" class="app-search colorDullred" search="OPPO">OPPO R9</a>
+            <a href="#" class="app-search " search="6s">iPhone6s Plus</a>
+          #}
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endblock body-nav-main %}
+  </div>
+</div>

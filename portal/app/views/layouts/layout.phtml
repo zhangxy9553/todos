@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    {%block head-meta %}
+    {% endblock %} 
+    <title>{% block title %}{{title}} {% endblock title%}</title>
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/common/css/base.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/common/images/ffq.ico"/>
+    {% block head-links %}
+    {% endblock  %}
+    <!--[if lt IE 9]>
+    <script src="/assets/bootstrap/js/html5shiv.min.js"></script>
+    <script src="/assets/bootstrap/js/respond.min.js"></script>
+    <![endif]--> 
+
+   {% block head-scripts%}
+    {% endblock %}
+  </head>
+  <body>
+    {% block body-nav %}
+    {% include "../common/nav-header.phtml" %}
+    {% endblock %}
+    {% block body-banner %}
+
+    {% block body-banner-segment %}
+    {% endblock body-banner-segment %}
+
+    {% endblock %}
+    {% block body-content %}
+    {% endblock %}
+    {% block body-foot %}
+    {% include "../common/foot.phtml" %}
+    {% endblock %}
+    <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="/app/javascripts/app.js"></script>
+    <script src="/app/javascripts/app.search.js"></script>
+    <script src="/app/javascripts/user/user.js"></script>
+    <script>
+      app.initModule(); 
+    </script>
+    {% block body-foot-js %}
+    {% endblock %}
+
+  </body>
+</html>

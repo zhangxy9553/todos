@@ -1,0 +1,13 @@
+{
+  "mysql":
+  {
+    "host": "127.0.0.1"
+      ,  "user": "root"
+      ,  "password": "root"
+      ,  "database": "todo"
+      ,  "dateStrings": true
+  }
+  , "apiLocals" : {
+    "api" : "http://127.0.0.1:3001/"
+  }
+}
